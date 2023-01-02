@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: royalblue;
+	background-image: url(images/pink.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
+	color: #fff;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+
+
+}
+.container{
+	background-image: url(images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 50vw;
+	height: 100vh;
+	margin: 0 auto;
+}
+p {
+	font-size: 2rem;
+	color: crimson;
+}
+button{
+	font-size: 1.5rem;
+	padding: .4em;
+	font-weight: bold;
+	border-radius: 2em;
+	cursor: pointer;
+}
+button:hover {
+	color: #fff;
+	background-color: black;
+}
+
+button.click {
+	margin-top: 2em;
+}
+	
+
+.new-deck {
+	
+	
+}
+
+.card-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: calc(120px * 5 / 7);
+	height: 120px;
+	padding: 2em 0;
+	margin: 0 auto;
+}
+
+@media(max-width: 600px){
+	.container{
+		width: 100vw;
+		min-width: 100vw;
+
+	}
+	.card-container {
+	
+	width: calc(160px * 5 / 7);
+	height: 160px;
+
+	}
+	p {
+	font-size: 1rem;
+	
+}
+button{
+	font-size: 1rem;
+	padding: .3em;
+	
+	
+}
+}
